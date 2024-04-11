@@ -1,0 +1,10 @@
+{
+  "name": "nxmf-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/nxmf-e2e/src",
+  "tags": [],
+  "implicitDependencies": ["nxmf"],
+  "// targets": "to see all targets run: nx show project nxmf-e2e --web",
+  "targets": {}
+}
