@@ -44,6 +44,20 @@
           "codeCoverage": true
         }
       }
+    },
+    "@angular-devkit/build-angular:browser": {
+      "cache": true,
+      "dependsOn": ["^build"],
+      "inputs": ["production", "^production"]
+    },
+    "@nx/angular:webpack-browser": {
+      "inputs": [
+        "production",
+        "^production",
+        {
+          "env": "NX_MF_DEV_SERVER_STATIC_REMOTES"
+        }
+      ]
     }
   },
   "plugins": [
@@ -70,5 +84,6 @@
       "style": "scss",
       "unitTestRunner": "jest"
     }
-  }
+  },
+  "nxCloudAccessToken": "NDRlNTFhOWMtNjZmZi00OWZiLWIzZmMtMzVmYTMwOTliNDQ2fHJlYWQtd3JpdGU="
 }

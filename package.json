@@ -2,7 +2,11 @@
   "name": "@nxmf/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "start": "nx serve host --open --devRemotes=\"shop,cart,about\"",
+    "graph": "nx dep-graph",
+    "serve:build": "nx serve-static host"
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "~17.3.0",
@@ -34,6 +38,7 @@
     "@nx/jest": "18.2.4",
     "@nx/js": "18.2.4",
     "@nx/web": "18.2.4",
+    "@nx/webpack": "18.2.4",
     "@nx/workspace": "18.2.4",
     "@schematics/angular": "~17.3.0",
     "@swc-node/register": "~1.8.0",
